@@ -159,15 +159,15 @@ function draw() {
     push();
     background(rcol-20, gcol-20,bcol-20);
     push();
-      if(detections.length > 0){
-        translate(windowWidth/2-(windowWidth/4), height/2);
-        points = detections[0].landmarks.positions;
-        for(let l = 0; l<points.length; l++){
-          stroke(rcol - 100, gcol - 100, bcol - 100);
-          strokeWeight(4);
-          point(points[l]._x+random(-1,1), points[l]._y+random(-1,1));
-        }
-      }
+//       if(detections.length > 0){
+//         translate(windowWidth/2-(windowWidth/4), height/2);
+//         points = detections[0].landmarks.positions;
+//         for(let l = 0; l<points.length; l++){
+//           stroke(rcol - 100, gcol - 100, bcol - 100);
+//           strokeWeight(4);
+//           point(points[l]._x+random(-1,1), points[l]._y+random(-1,1));
+//         }
+//       }
     pop();
       fill(255);
       noStroke();
